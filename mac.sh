@@ -69,25 +69,25 @@ println "Installing Oh my ZSH..."
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 println "Installing iTerm2..."
-  brew reinstall --cask iterm2
+  brew install term2
 
 println "Installing Github..."
-  brew reinstall --cask github
+  brew install github
 
 println "Installing Visual Studio Code..."
-  brew reinstall --cask visual-studio-code
+  brew install visual-studio-code
 
 println "Installing Slack..."
-  brew reinstall --cask slack
+  brew install slack
 
 println "Installing Spotify..."
-  brew reinstall --cask spotify
+  brew install spotify
 
 println "Installing Postgres..."
   brew_install_or_upgrade 'postgres'
 
 println "Installing Postgres.app..."
-  brew reinstall --cask postgres
+  brew installpostgres
 
 println "Installing Redis..."
   brew_install_or_upgrade 'redis'
@@ -100,10 +100,10 @@ println "Installing ImageMagick, to crop and resize images..."
 
 println "Installing ChromeDriver, to drive Chrome via Selenium..."
   brew tap homebrew/cask
-  brew reinstall --cask chromedriver
+  brew install chromedriver
 
 println "Installing Docker..."
-  brew reinstall --cask docker
+  brew install docker
 
 println "Installing docker-compose..."
   brew_install_or_upgrade 'docker-compose'
