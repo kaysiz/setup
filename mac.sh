@@ -9,7 +9,7 @@ if [ ! -f "$HOME/.bashrc" ]; then
 fi
 
 if [[ `uname -m` == 'arm64' ]]; then
-  softwareupdate --install-rosetta
+  softwareupdate --install-rosetta --agree-to-license
 fi
 
 println() {
