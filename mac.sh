@@ -65,17 +65,17 @@ fi
 println "Updating Homebrew formulas..."
 brew update
 
+println "Installing Oh my ZSH..."
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 println "Installing iTerm2..."
   brew reinstall --cask iterm2
-
-println "Installing Firefox..."
-  brew reinstall --cask firefox
 
 println "Installing Github..."
   brew reinstall --cask github
 
-println "Installing Atom..."
-  brew reinstall --cask atom
+println "Installing Visual Studio Code..."
+  brew reinstall --cask visual-studio-code
 
 println "Installing Slack..."
   brew reinstall --cask slack
@@ -119,6 +119,11 @@ println "Installing NVM, Node.js, and NPM, for running apps and installing JavaS
   if ! grep -qs 'source $(brew --prefix nvm)/nvm.sh' ~/.bashrc; then
     printf 'export PATH="$PATH:/usr/local/lib/node_modules"\n' >> ~/.bashrc
     printf 'source $(brew --prefix nvm)/nvm.sh\n' >> ~/.bashrc
+  fi
+  
+  if ! grep -qs 'source $(brew --prefix nvm)/nvm.sh' ~/.zshrc; then
+    printf 'export PATH="$PATH:/usr/local/lib/node_modules"\n' >> ~/.zshrc
+    printf 'source $(brew --prefix nvm)/nvm.sh\n' >> ~/.zshrc
   fi
 
   source $(brew --prefix nvm)/nvm.sh
