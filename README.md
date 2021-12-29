@@ -5,7 +5,7 @@ Script to install base environment for Ruby development.
 ## Install on Mac OS X
 
 ```
-curl -L https://raw.githubusercontent.com/ombulabs/setup/master/mac.sh | bash
+curl -L https://raw.githubusercontent.com/kaysiz/setup/master/mac.sh | bash
 ```
 
 ## Installed libraries
@@ -29,7 +29,7 @@ The script will install:
 * spotify
 * slack
 * firefox
-* atom
+* VS Code
 
 # FAQ
 
